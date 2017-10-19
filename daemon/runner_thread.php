@@ -47,6 +47,15 @@ switch($job_info->code_type)
     case $code_type->java:
         $target="java.sh";
         break;
+    case $code_type->php7:
+        $target="php7.sh";
+        break;
+    case $code_type->pascal:
+        $target="pascal.sh";
+        break;
+    case $code_type->python3:
+        $target="python3.sh";
+        break;
 }
 exec("php watcher_thread.php $jobid $second > /dev/null &");//启动监视进程
 exec("cgexec -g cpu,memory:runner_limit lxc-execute -n $jobid /etc/$target -o /dev/null > /dev/null");

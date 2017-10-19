@@ -113,7 +113,19 @@ c&c++
 
 java
 
-`apt-get install default-jdk default-jre`
+`apt-get install default-jdk default-jre -y` 
+
+php7
+
+`apt-get install php7.0-cli -y`
+
+pascal
+
+`apt-get install fp-compiler -y`
+
+python3
+
+`apt-get install python3 -y`
 
 创建代码执行目录
 
@@ -129,7 +141,7 @@ java
 
 ` cgexec -g memory:runner_limit lxc-execute -n runner /home/runner/test`
 
-若显示hello world即成功限制
+若未显示hello world即成功限制
 
 # 参考资料
 
