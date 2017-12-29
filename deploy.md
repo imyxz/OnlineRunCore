@@ -85,7 +85,7 @@ echo "lxc.network.type = veth" >> ~/.config/lxc/default.conf
 echo "lxc.network.link = lxcbr0" >> ~/.config/lxc/default.conf
 ```
 
-以root权限执行: `echo "runner veth lxcbr0 2" | sudo tee -a /etc/lxc/lxc-u sernet`
+以root权限执行: `echo "runner veth lxcbr0 2" | sudo tee -a /etc/lxc/lxc-usernet`
 
 ### 创建容器 ubuntu16
 
